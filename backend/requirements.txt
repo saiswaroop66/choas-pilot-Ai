@@ -1,4 +1,10 @@
 fastapi
 uvicorn[standard]
-python-dotenv
 python-multipart
+python-dotenv
+pydantic
+groq
+requests
+httpx
+aiofiles
+sqlalchemy
