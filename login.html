@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | ChaosPilot</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/login.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- Main -->
+    <main class="login-page">
+
+        <!-- Left Side -->
+        <section class="login-info">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <div class="brand-mark">
+                    C
+                </div>
+
+                <span>
+                    ChaosPilot
+                </span>
+
+            </a>
+
+
+            <div class="info-content">
+
+                <span class="eyebrow">
+                    SOFTWARE RESILIENCE ENGINEERING
+                </span>
+
+                <h1>
+                    Build software
+                    <span>that survives failure.</span>
+                </h1>
+
+                <p>
+                    ChaosPilot uses AI to understand your
+                    application's architecture, predict
+                    failure impact and help engineers
+                    build more resilient systems.
+                </p>
+
+
+                <div class="feature-list">
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>
+                                AI Root-Cause Analysis
+                            </strong>
+
+                            <p>
+                                Understand why your system fails.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>
+                                Failure Prediction
+                            </strong>
+
+                            <p>
+                                Discover risks before production incidents.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>
+                                Controlled Chaos Experiments
+                            </strong>
+
+                            <p>
+                                Test how your application responds to failure.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+                © 2026 ChaosPilot
+            </div>
+
+        </section>
+
+
+        <!-- Right Side -->
+        <section class="login-section">
+
+            <div class="login-card">
+
+
+                <!-- Header -->
+
+                <div class="login-header">
+
+                    <div class="mobile-brand">
+
+                        <div class="brand-mark">
+                            C
+                        </div>
+
+                        <span>
+                            ChaosPilot
+                        </span>
+
+                    </div>
+
+
+                    <span class="login-eyebrow">
+                        ENGINEERING CONSOLE
+                    </span>
+
+                    <h2>
+                        Welcome back
+                    </h2>
+
+                    <p>
+                        Sign in to continue to your
+                        resilience workspace.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm">
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            EMAIL ADDRESS
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="you@company.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <div class="label-row">
+
+                            <label for="loginPassword">
+                                PASSWORD
+                            </label>
+
+                            <a
+                                href="#"
+                                id="forgotPassword"
+                            >
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="passwordToggle"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember -->
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span>
+                            Keep me signed in
+                        </span>
+
+                    </label>
+
+
+                    <!-- Login -->
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                        class="login-button"
+                    >
+
+                        <span>
+                            Sign in to ChaosPilot
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Demo -->
+
+                    <button
+                        type="button"
+                        id="demoLogin"
+                        class="demo-button"
+                    >
+                        Use Demo Account
+                    </button>
+
+
+                </form>
+
+
+                <!-- Register -->
+
+                <div class="register-section">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a
+                        href="#"
+                        id="registerLink"
+                    >
+                        Create account
+                    </a>
+
+                </div>
+
+
+                <!-- Security -->
+
+                <div class="security-note">
+
+                    <span>
+                        ◉
+                    </span>
+
+                    <p>
+                        Your workspace is protected with
+                        encrypted authentication.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Auth JavaScript -->
+    <script src="./js/auth.js"></script>
+
+</body>
+
+</html>

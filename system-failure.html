@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ChaosPilot | System Failure</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/system-failure.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                C
+            </div>
+
+            <div>
+
+                <strong>ChaosPilot</strong>
+
+                <span>
+                    Resilience Platform
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="workspace">
+
+            <span class="workspace-label">
+                WORKSPACE
+            </span>
+
+            <div class="workspace-box">
+
+                <div class="workspace-icon">
+                    S
+                </div>
+
+                <div>
+
+                    <strong id="workspaceName">
+                        ShopEasy
+                    </strong>
+
+                    <span>
+                        Production
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-title">
+                ENGINEERING
+            </span>
+
+
+            <a
+                href="./dashboard.html"
+                class="nav-item"
+            >
+                <span>◈</span>
+                Overview
+            </a>
+
+
+            <a
+                href="./application.html"
+                class="nav-item"
+            >
+                <span>▦</span>
+                Applications
+            </a>
+
+
+            <a
+                href="./analysis.html"
+                class="nav-item"
+            >
+                <span>⌁</span>
+                Architecture
+            </a>
+
+
+            <a
+                href="./system-failure.html"
+                class="nav-item active"
+            >
+                <span>⚠</span>
+                System Failure
+            </a>
+
+
+            <a
+                href="./dashboard.html#experiments"
+                class="nav-item"
+            >
+                <span>⚗</span>
+                Experiments
+            </a>
+
+
+            <a
+                href="./dashboard.html#ai"
+                class="nav-item"
+            >
+                <span>✦</span>
+                AI Engineer
+            </a>
+
+
+            <a
+                href="./report.html"
+                class="nav-item"
+            >
+                <span>▤</span>
+                Reports
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="plan-card">
+
+                <span>CURRENT PLAN</span>
+
+                <strong>
+                    Engineering Pro
+                </strong>
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+                <small>
+                    37 / 100 experiments
+                </small>
+
+            </div>
+
+
+            <button
+                class="user-button"
+                id="logoutButton"
+            >
+
+                <div class="avatar">
+                    S
+                </div>
+
+                <div>
+
+                    <strong>
+                        Swaroop
+                    </strong>
+
+                    <span>
+                        Engineer
+                    </span>
+
+                </div>
+
+                <span class="user-menu">
+                    ⋮
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+
+                <a href="./dashboard.html">
+                    Engineering
+                </a>
+
+                <span>/</span>
+
+                <strong>
+                    System Failure
+                </strong>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <span class="system-status">
+
+                    <i></i>
+
+                    AI Engine Ready
+
+                </span>
+
+
+                <button
+                    class="back-button"
+                    id="backButton"
+                >
+                    ← Dashboard
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             PAGE HEADER
+             ===================================================== -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    FAILURE INTELLIGENCE
+                </span>
+
+                <h1>
+                    System Failure Analysis
+                </h1>
+
+                <p>
+                    Simulate component failures and let
+                    ChaosPilot trace the failure from the
+                    service level down to the exact file,
+                    function and line of code.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             COMPONENT SELECTOR
+             ===================================================== -->
+
+        <section class="failure-selector">
+
+            <div class="selector-heading">
+
+                <div>
+
+                    <span>
+                        SELECT COMPONENT
+                    </span>
+
+                    <h2>
+                        What happens if this fails?
+                    </h2>
+
+                </div>
+
+
+                <div class="ai-ready">
+
+                    <i></i>
+
+                    AI analysis ready
+
+                </div>
+
+            </div>
+
+
+            <div class="component-grid">
+
+
+                <button
+                    class="component-card selected"
+                    data-component="Payment Service"
+                    data-risk="high"
+                >
+
+                    <div class="component-icon">
+                        $
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            Payment Service
+                        </strong>
+
+                        <span>
+                            payments-api
+                        </span>
+
+                    </div>
+
+                    <span class="risk high">
+                        HIGH
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="component-card"
+                    data-component="Order Service"
+                    data-risk="medium"
+                >
+
+                    <div class="component-icon">
+                        O
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            Order Service
+                        </strong>
+
+                        <span>
+                            orders-api
+                        </span>
+
+                    </div>
+
+                    <span class="risk medium">
+                        MEDIUM
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="component-card"
+                    data-component="PostgreSQL"
+                    data-risk="critical"
+                >
+
+                    <div class="component-icon">
+                        DB
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            PostgreSQL
+                        </strong>
+
+                        <span>
+                            primary-db
+                        </span>
+
+                    </div>
+
+                    <span class="risk critical">
+                        CRITICAL
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="component-card"
+                    data-component="Redis Cache"
+                    data-risk="low"
+                >
+
+                    <div class="component-icon">
+                        R
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            Redis Cache
+                        </strong>
+
+                        <span>
+                            cache-layer
+                        </span>
+
+                    </div>
+
+                    <span class="risk low">
+                        LOW
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="component-card"
+                    data-component="API Gateway"
+                    data-risk="critical"
+                >
+
+                    <div class="component-icon">
+                        API
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            API Gateway
+                        </strong>
+
+                        <span>
+                            edge-gateway
+                        </span>
+
+                    </div>
+
+                    <span class="risk critical">
+                        CRITICAL
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="component-card"
+                    data-component="Notification Service"
+                    data-risk="low"
+                >
+
+                    <div class="component-icon">
+                        N
+                    </div>
+
+                    <div class="component-info">
+
+                        <strong>
+                            Notification Service
+                        </strong>
+
+                        <span>
+                            notification-api
+                        </span>
+
+                    </div>
+
+                    <span class="risk low">
+                        LOW
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <button
+                class="simulate-button"
+                id="simulateFailure"
+            >
+
+                <span>⚡</span>
+
+                Analyze Failure
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ANALYSIS RESULT
+             ===================================================== -->
+
+        <section
+            class="analysis-result"
+            id="analysisResult"
+        >
+
+
+            <!-- RESULT HEADER -->
+
+            <div class="result-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        AI FAILURE PREDICTION
+                    </span>
+
+                    <h2 id="failureTitle">
+                        Payment Service Failure
+                    </h2>
+
+                    <p id="failureDescription">
+                        ChaosPilot predicts the following
+                        impact if this component becomes
+                        unavailable.
+                    </p>
+
+                </div>
+
+
+                <div class="confidence">
+
+                    <span>
+                        AI CONFIDENCE
+                    </span>
+
+                    <strong id="confidenceValue">
+                        94%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 METRICS
+                 ================================================= -->
+
+            <div class="result-grid">
+
+
+                <div class="blast-card">
+
+                    <span class="card-label">
+                        BLAST RADIUS
+                    </span>
+
+                    <div class="blast-number">
+
+                        <strong id="blastValue">
+                            43
+                        </strong>
+
+                        <span>%</span>
+
+                    </div>
+
+                    <p>
+                        Estimated percentage of the
+                        application affected.
+                    </p>
+
+                    <div class="blast-bar">
+
+                        <span id="blastBar"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <span class="card-label">
+                        USER IMPACT
+                    </span>
+
+                    <strong id="impactLevel">
+                        HIGH
+                    </strong>
+
+                    <p id="impactDescription">
+                        Users may be unable to complete
+                        checkout and payment operations.
+                    </p>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <span class="card-label">
+                        ESTIMATED RECOVERY
+                    </span>
+
+                    <strong id="recoveryTime">
+                        18 min
+                    </strong>
+
+                    <p>
+                        Estimated recovery time based
+                        on current configuration.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FAILURE PROPAGATION
+                 ================================================= -->
+
+            <div class="failure-chain">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span>
+                            FAILURE PROPAGATION
+                        </span>
+
+                        <h3>
+                            How the failure travels
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chain">
+
+                    <div class="chain-node failed">
+
+                        <span>
+                            FAILURE
+                        </span>
+
+                        <strong id="chainStart">
+                            Payment Service
+                        </strong>
+
+                        <small>
+                            Component unavailable
+                        </small>
+
+                    </div>
+
+
+                    <div class="chain-arrow">
+                        →
+                    </div>
+
+
+                    <div class="chain-node affected">
+
+                        <span>
+                            AFFECTED
+                        </span>
+
+                        <strong>
+                            Checkout
+                        </strong>
+
+                        <small>
+                            Payment cannot complete
+                        </small>
+
+                    </div>
+
+
+                    <div class="chain-arrow">
+                        →
+                    </div>
+
+
+                    <div class="chain-node affected">
+
+                        <span>
+                            AFFECTED
+                        </span>
+
+                        <strong>
+                            Order Service
+                        </strong>
+
+                        <small>
+                            Orders remain pending
+                        </small>
+
+                    </div>
+
+
+                    <div class="chain-arrow">
+                        →
+                    </div>
+
+
+                    <div class="chain-node user-impact">
+
+                        <span>
+                            USER
+                        </span>
+
+                        <strong>
+                            Customer
+                        </strong>
+
+                        <small>
+                            Checkout interruption
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ROOT CAUSE DETECTION
+                 ================================================= -->
+
+            <section class="root-cause-section">
+
+                <div class="root-cause-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            CODE-LEVEL INTELLIGENCE
+                        </span>
+
+                        <h2>
+                            🔍 Root Cause Detected
+                        </h2>
+
+                        <p>
+                            ChaosPilot traced the failure
+                            from the affected service to
+                            the exact location in your code.
+                        </p>
+
+                    </div>
+
+
+                    <div class="root-status">
+
+                        <i></i>
+
+                        Root cause identified
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ROOT CAUSE META -->
+
+                <div class="root-meta">
+
+
+                    <div class="root-meta-card">
+
+                        <span>
+                            FILE
+                        </span>
+
+                        <strong id="rootFile">
+                            payment_service.py
+                        </strong>
+
+                    </div>
+
+
+                    <div class="root-meta-card">
+
+                        <span>
+                            FUNCTION
+                        </span>
+
+                        <strong id="rootFunction">
+                            process_payment()
+                        </strong>
+
+                    </div>
+
+
+                    <div class="root-meta-card">
+
+                        <span>
+                            LINE
+                        </span>
+
+                        <strong id="rootLine">
+                            142
+                        </strong>
+
+                    </div>
+
+
+                    <div class="root-meta-card severity">
+
+                        <span>
+                            SEVERITY
+                        </span>
+
+                        <strong id="rootSeverity">
+                            CRITICAL
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CODE -->
+
+                <div class="code-analysis">
+
+                    <div class="code-header">
+
+                        <div>
+
+                            <span>
+                                SOURCE CODE
+                            </span>
+
+                            <strong id="codeFile">
+                                backend/payment_service.py
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            id="copyCode"
+                            class="copy-button"
+                        >
+                            Copy
+                        </button>
+
+                    </div>
+
+
+                    <div class="code-window">
+
+<pre><code id="codeSnippet"><span class="line-number">139</span>     payment = create_payment(data)
+<span class="line-number">140</span>
+<span class="line-number">141</span>     # Process database transaction
+<span class="line-number error-line">142</span>     result = db.execute(payment_query)
+<span class="line-number">143</span>
+<span class="line-number">144</span>     return result
+<span class="line-number">145</span>
+<span class="line-number">146</span>     send_confirmation(payment)</code></pre>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WHY -->
+
+                <div class="root-explanation">
+
+                    <div class="explanation-icon">
+                        !
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            WHY THIS CAUSES THE FAILURE
+                        </span>
+
+                        <p id="rootExplanation">
+                            The database operation can throw
+                            a timeout exception, but the
+                            process_payment() function does
+                            not handle the exception.
+
+                            When the database becomes slow
+                            or unavailable, the exception
+                            propagates to the API layer and
+                            produces a 500 response.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAILURE CHAIN -->
+
+                <div class="code-failure-chain">
+
+                    <div class="mini-chain">
+
+                        <div>
+                            <span>01</span>
+                            <strong>
+                                Database Timeout
+                            </strong>
+                        </div>
+
+                        <b>→</b>
+
+                        <div>
+                            <span>02</span>
+                            <strong>
+                                Unhandled Exception
+                            </strong>
+                        </div>
+
+                        <b>→</b>
+
+                        <div>
+                            <span>03</span>
+                            <strong>
+                                API 500 Error
+                            </strong>
+                        </div>
+
+                        <b>→</b>
+
+                        <div>
+                            <span>04</span>
+                            <strong>
+                                Checkout Failure
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 AI RECOMMENDATION
+                 ================================================= -->
+
+            <section class="recommendation">
+
+                <div class="recommendation-icon">
+                    ✦
+                </div>
+
+
+                <div class="recommendation-content">
+
+                    <span>
+                        CHAOSPILOT AI RECOMMENDATION
+                    </span>
+
+                    <h3 id="recommendationTitle">
+                        Add database timeout handling
+                    </h3>
+
+                    <p id="recommendationText">
+                        Introduce timeout handling,
+                        controlled retries and a fallback
+                        strategy around the database operation
+                        to prevent the exception from reaching
+                        the API layer.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="recommendation-button"
+                    id="viewRecommendation"
+                >
+                    View Fix →
+                </button>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CONTROLLED EXPERIMENT
+                 ================================================= -->
+
+            <section class="experiment-cta">
+
+                <div>
+
+                    <span>
+                        VALIDATE THE PREDICTION
+                    </span>
+
+                    <h2>
+                        Test this failure safely.
+                    </h2>
+
+                    <p>
+                        Run a controlled chaos experiment
+                        to verify whether the predicted
+                        failure actually occurs.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="runExperiment"
+                >
+                    Prepare Experiment →
+                </button>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                ChaosPilot Engineering Platform
+            </span>
+
+            <span>
+                AI-powered failure intelligence
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="./js/system-failure.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ChaosPilot | Add Application</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/application.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="application-layout">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                C
+            </div>
+
+            <div>
+
+                <strong>
+                    ChaosPilot
+                </strong>
+
+                <span>
+                    Resilience Platform
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="workspace">
+
+            <span class="workspace-label">
+                WORKSPACE
+            </span>
+
+            <div class="workspace-box">
+
+                <div class="workspace-icon">
+                    S
+                </div>
+
+                <div>
+
+                    <strong>
+                        ShopEasy
+                    </strong>
+
+                    <span>
+                        Production
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-title">
+                ENGINEERING
+            </span>
+
+
+            <a
+                href="./dashboard.html"
+                class="nav-item"
+            >
+
+                <span>
+                    ◈
+                </span>
+
+                Overview
+
+            </a>
+
+
+            <a
+                href="./application.html"
+                class="nav-item active"
+            >
+
+                <span>
+                    ▦
+                </span>
+
+                Applications
+
+            </a>
+
+
+            <a
+                href="./system-failure.html"
+                class="nav-item"
+            >
+
+                <span>
+                    ◉
+                </span>
+
+                Failure Intelligence
+
+            </a>
+
+
+            <a
+                href="./dashboard.html#experiments"
+                class="nav-item"
+            >
+
+                <span>
+                    ⚗
+                </span>
+
+                Experiments
+
+            </a>
+
+
+            <a
+                href="./dashboard.html#ai"
+                class="nav-item"
+            >
+
+                <span>
+                    ✦
+                </span>
+
+                AI Engineer
+
+            </a>
+
+
+            <a
+                href="./report.html"
+                class="nav-item"
+            >
+
+                <span>
+                    ▤
+                </span>
+
+                Reports
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="plan-card">
+
+                <span>
+                    CURRENT PLAN
+                </span>
+
+                <strong>
+                    Engineering Pro
+                </strong>
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+                <small>
+                    37 / 100 experiments
+                </small>
+
+            </div>
+
+
+            <button
+                class="user-button"
+                id="logoutButton"
+            >
+
+                <div class="avatar">
+                    S
+                </div>
+
+                <div>
+
+                    <strong>
+                        Swaroop
+                    </strong>
+
+                    <span>
+                        Engineer
+                    </span>
+
+                </div>
+
+                <span class="user-menu">
+                    ⋮
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+
+                <a href="./dashboard.html">
+                    Engineering
+                </a>
+
+                <span>
+                    /
+                </span>
+
+                <strong>
+                    Add Application
+                </strong>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <span class="connection-status">
+
+                    <i></i>
+
+                    Platform connected
+
+                </span>
+
+
+                <button
+                    class="back-button"
+                    id="backButton"
+                >
+                    ← Back
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             PAGE INTRO
+             ================================================= -->
+
+        <section class="page-intro">
+
+            <span class="eyebrow">
+                APPLICATION ONBOARDING
+            </span>
+
+            <h1>
+                Connect your application
+            </h1>
+
+            <p>
+                Give ChaosPilot enough information to understand
+                your application architecture and identify
+                potential failure points.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROGRESS
+             ================================================= -->
+
+        <div class="steps">
+
+            <div class="step active">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <div>
+
+                    <strong>
+                        Application
+                    </strong>
+
+                    <span>
+                        Basic information
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <div>
+
+                    <strong>
+                        Architecture
+                    </strong>
+
+                    <span>
+                        System details
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <div>
+
+                    <strong>
+                        Analysis
+                    </strong>
+
+                    <span>
+                        AI preparation
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FORM
+             ================================================= -->
+
+        <section class="onboarding-grid">
+
+
+            <!-- LEFT FORM -->
+
+            <div class="form-card">
+
+                <div class="card-heading">
+
+                    <span class="card-icon">
+                        ◈
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Application details
+                        </h2>
+
+                        <p>
+                            Tell us about the system you want
+                            ChaosPilot to analyze.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- APPLICATION NAME -->
+
+                <div class="form-group">
+
+                    <label for="applicationName">
+                        APPLICATION NAME
+                    </label>
+
+                    <input
+                        id="applicationName"
+                        type="text"
+                        placeholder="Example: ShopEasy"
+                    >
+
+                    <small>
+                        A recognizable name for your application.
+                    </small>
+
+                </div>
+
+
+
+                <!-- URL -->
+
+                <div class="form-group">
+
+                    <label for="applicationUrl">
+                        APPLICATION URL
+                    </label>
+
+                    <input
+                        id="applicationUrl"
+                        type="url"
+                        placeholder="https://api.example.com"
+                    >
+
+                    <small>
+                        The main URL or API endpoint of your application.
+                    </small>
+
+                </div>
+
+
+
+                <!-- ENVIRONMENT -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="environment">
+                            ENVIRONMENT
+                        </label>
+
+                        <select id="environment">
+
+                            <option value="">
+                                Select environment
+                            </option>
+
+                            <option value="production">
+                                Production
+                            </option>
+
+                            <option value="staging">
+                                Staging
+                            </option>
+
+                            <option value="development">
+                                Development
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="applicationType">
+                            APPLICATION TYPE
+                        </label>
+
+                        <select id="applicationType">
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option value="web">
+                                Web Application
+                            </option>
+
+                            <option value="api">
+                                API / Backend
+                            </option>
+
+                            <option value="microservices">
+                                Microservices
+                            </option>
+
+                            <option value="mobile">
+                                Mobile Backend
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TECH STACK -->
+
+                <div class="form-group">
+
+                    <label>
+                        TECHNOLOGY STACK
+                    </label>
+
+                    <div class="technology-grid">
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="python"
+                            >
+
+                            <span>
+                                Python
+                            </span>
+
+                        </label>
+
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="javascript"
+                            >
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </label>
+
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="java"
+                            >
+
+                            <span>
+                                Java
+                            </span>
+
+                        </label>
+
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="node"
+                            >
+
+                            <span>
+                                Node.js
+                            </span>
+
+                        </label>
+
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="react"
+                            >
+
+                            <span>
+                                React
+                            </span>
+
+                        </label>
+
+
+                        <label class="technology">
+
+                            <input
+                                type="checkbox"
+                                value="other"
+                            >
+
+                            <span>
+                                Other
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        APPLICATION DESCRIPTION
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Example: E-commerce platform handling customer orders, payments and inventory."
+                    ></textarea>
+
+                    <small>
+                        This helps the AI understand the business context.
+                    </small>
+
+                </div>
+
+
+
+                <!-- ACTIONS -->
+
+                <div class="form-actions">
+
+                    <button
+                        class="cancel-button"
+                        id="cancelButton"
+                    >
+                        Cancel
+                    </button>
+
+
+                    <button
+                        class="connect-button"
+                        id="connectButton"
+                    >
+
+                        Continue
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT INFORMATION -->
+
+            <aside class="info-column">
+
+
+                <!-- AI ANALYSIS -->
+
+                <div class="info-card ai-info">
+
+                    <div class="info-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        What ChaosPilot will do
+                    </h3>
+
+                    <p>
+                        After connecting your application,
+                        ChaosPilot builds a model of how your
+                        services interact.
+                    </p>
+
+
+                    <div class="analysis-list">
+
+                        <div>
+
+                            <span>
+                                01
+                            </span>
+
+                            <p>
+                                Discover application components
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                02
+                            </span>
+
+                            <p>
+                                Map service dependencies
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                03
+                            </span>
+
+                            <p>
+                                Identify potential failure points
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                04
+                            </span>
+
+                            <p>
+                                Generate AI resilience recommendations
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="info-card">
+
+                    <div class="security-heading">
+
+                        <span class="lock-icon">
+                            ◈
+                        </span>
+
+                        <h3>
+                            Your application data
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        ChaosPilot only analyzes applications
+                        that you are authorized to test.
+                        Production chaos experiments will
+                        require explicit approval.
+                    </p>
+
+                </div>
+
+
+
+                <!-- TIP -->
+
+                <div class="tip-card">
+
+                    <span>
+                        ENGINEERING TIP
+                    </span>
+
+                    <strong>
+                        Start with staging.
+                    </strong>
+
+                    <p>
+                        Connect a staging environment first.
+                        Once the architecture analysis is
+                        validated, you can safely move toward
+                        controlled production experiments.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                ChaosPilot Engineering Platform
+            </span>
+
+            <span>
+                Secure application onboarding
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="./js/application.js"></script>
+
+</body>
+
+</html>
